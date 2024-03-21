@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ArtwiseAPI\ArtwiseAPI.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -40,5 +40,5 @@ dotnet publish -c Release -o "path/to/build/folder"
 [CodeFactor-Badge]: https://www.codefactor.io/repository/github/fuzzylab-uva/artwise-api/badge/main
 [.NET-Url]: ../../actions/workflows/dotnet.yml
 [.NET-Badge]: ../../actions/workflows/dotnet.yml/badge.svg
-[CodeQL-Url]: ../../actions/workflows/codeql.yml
-[CodeQL-Badge]: ../../actions/workflows/codeql.yml/badge.svg
+[CodeQL-Url]: ../../actions/workflows/codeql-analysis.yml
+[CodeQL-Badge]: ../../actions/workflows/codeql-analysis.yml/badge.svg
