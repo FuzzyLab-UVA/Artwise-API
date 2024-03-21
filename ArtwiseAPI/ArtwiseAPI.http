@@ -1,0 +1,6 @@
+@ArtwiseAPI_HostAddress = http://localhost:5097
+
+GET {{ArtwiseAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
