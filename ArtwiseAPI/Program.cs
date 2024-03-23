@@ -1,4 +1,5 @@
 using ArtwiseAPI.Models;
+using ArtwiseDatabase.Extensions;
 
 namespace ArtwiseAPI;
 
@@ -12,6 +13,7 @@ internal sealed class Program
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+        builder.Services.AddArtwiseDb();
 
         var app = builder.Build();
 
