@@ -50,7 +50,7 @@ public sealed class ArtwiseDbContext : DbContext
     }
 
     /// <summary>
-    /// Sets collation of all <see langword="string"/> columns to <paramref name="sqlCollation"/>.
+    /// Sets collation of all <typeparamref name="T"/> columns to <paramref name="sqlCollation"/>.
     /// </summary>
     /// <typeparam name="T">The type of data to apply the collation to.</typeparam>
     /// <param name="modelBuilder">The model builder.</param>
