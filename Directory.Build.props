@@ -23,4 +23,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="ArtwiseTests" />
+  </ItemGroup>
 </Project>

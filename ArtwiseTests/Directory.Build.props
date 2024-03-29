@@ -1,0 +1,3 @@
+<!-- Empty csproj to cancel out the global base csproj -->
+<!-- so we don't need to write XML documentation for unit tests -->
+<Project />
