@@ -13,7 +13,7 @@ public sealed record AuthenticationRequest(string Email, string Password) : IVal
     /// <inheritdoc />
     public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
     {
-        if (!ApiStatics.EmailRegex.IsMatch(Email))
+        if (!ApiStatics.EmailRegex.IsMatch(Email ?? string.Empty))
             yield return new ValidationResult("E-mail is not valid.", [nameof(Email)]);
 
         if (string.IsNullOrWhiteSpace(Password))

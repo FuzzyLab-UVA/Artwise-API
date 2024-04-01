@@ -30,8 +30,8 @@ public sealed class AuthenticationController : ControllerBase
     /// <returns>A <see cref="AuthenticationResponse"/> or a <see cref="ProblemHttpResult"/>.</returns>
     [HttpPost, AllowAnonymous]
     [ProducesResponseType(typeof(AuthenticationResponse), StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(ProblemHttpResult), StatusCodes.Status400BadRequest)]
-    [ProducesResponseType(typeof(ProblemHttpResult), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
     public async Task<Results<Ok<AuthenticationResponse>, ProblemHttpResult>> AuthenticateAsync([FromBody] AuthenticationRequest request)
     {
         try
