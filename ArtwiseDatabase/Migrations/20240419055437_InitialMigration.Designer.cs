@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ArtwiseDatabase.Migrations
 {
     [DbContext(typeof(ArtwiseDbContext))]
-    [Migration("20240324001005_InitialMigration")]
+    [Migration("20240419055437_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -71,9 +71,9 @@ namespace ArtwiseDatabase.Migrations
 
             modelBuilder.Entity("ArtwiseDatabase.Entities.ArtEntity", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<ulong>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT")
+                        .HasColumnType("INTEGER")
                         .HasColumnName("id");
 
                     b.Property<string>("Author")
@@ -117,8 +117,8 @@ namespace ArtwiseDatabase.Migrations
 
             modelBuilder.Entity("ArtwiseDatabase.Entities.RemovalRequestEntity", b =>
                 {
-                    b.Property<Guid>("ArtId")
-                        .HasColumnType("TEXT")
+                    b.Property<ulong>("ArtId")
+                        .HasColumnType("INTEGER")
                         .HasColumnName("art_id");
 
                     b.Property<string>("Email")
@@ -147,8 +147,8 @@ namespace ArtwiseDatabase.Migrations
 
             modelBuilder.Entity("ArtwiseDatabase.Entities.TagEntity", b =>
                 {
-                    b.Property<Guid>("ArtId")
-                        .HasColumnType("TEXT")
+                    b.Property<ulong>("ArtId")
+                        .HasColumnType("INTEGER")
                         .HasColumnName("art_id");
 
                     b.Property<string>("Tag")
@@ -171,9 +171,9 @@ namespace ArtwiseDatabase.Migrations
 
             modelBuilder.Entity("ArtwiseDatabase.Entities.UserEntity", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<ulong>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT")
+                        .HasColumnType("INTEGER")
                         .HasColumnName("id");
 
                     b.Property<DateTimeOffset>("DateAdded")

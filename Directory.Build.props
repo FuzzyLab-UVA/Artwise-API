@@ -9,8 +9,8 @@
     <WarningsAsErrors>Nullable</WarningsAsErrors>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Authors>Matheus,Arthur,Luiz,Daniel,Gabriel</Authors>
-    <Copyright>Copyright © Matheus,Arthur,Luiz,Daniel,Gabriel 2024</Copyright>
+    <Authors>Matheus,Luiz,Daniel,Gabriel</Authors>
+    <Copyright>Copyright © Matheus,Luiz,Daniel,Gabriel 2024</Copyright>
     <PackageProjectUrl>https://github.com/FuzzyLab-UVA/Artwise-API</PackageProjectUrl>
     <RepositoryUrl>https://github.com/FuzzyLab-UVA/Artwise-API</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>

@@ -13,12 +13,7 @@ internal static class DefaultDbUser
     /// <summary>
     /// Id of the user.
     /// </summary>
-    internal static Guid Id = new(GuidString);
-
-    /// <summary>
-    /// The string Id of the user.
-    /// </summary>
-    internal const string GuidString = "dbb75469-64b2-4272-866d-6e1937bcfa7c";
+    internal const ulong Id = ulong.MaxValue;
 
     /// <summary>
     /// E-mail of the user.

@@ -13,7 +13,7 @@ public sealed record UserEntity : ArtwiseDbEntity
     /// <summary>
     /// The Id of the user.
     /// </summary>
-    public Guid Id { get; init; } = Guid.NewGuid();
+    public ulong Id { get; init; }
 
     /// <summary>
     /// The e-mail of the user.

@@ -17,7 +17,7 @@ public sealed record TagEntity : ArtwiseDbEntity
     /// <summary>
     /// The Id of the art.
     /// </summary>
-    public required Guid ArtId { get; init; }
+    public required ulong ArtId { get; init; }
 
     /// <summary>
     /// The tag for the art.

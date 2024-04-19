@@ -17,7 +17,7 @@ public sealed record RemovalRequestEntity : ArtwiseDbEntity
     /// <summary>
     /// The Id of the art this request is associated with.
     /// </summary>
-    public required Guid ArtId { get; init; }
+    public required ulong ArtId { get; init; }
 
     /// <summary>
     /// The e-mail of the user.

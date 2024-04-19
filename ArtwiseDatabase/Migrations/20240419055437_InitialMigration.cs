@@ -33,7 +33,8 @@ public partial class InitialMigration : Migration
             name: "arts",
             columns: table => new
             {
-                id = table.Column<Guid>(type: "TEXT", nullable: false),
+                id = table.Column<ulong>(type: "INTEGER", nullable: false)
+                    .Annotation("Sqlite:Autoincrement", true),
                 author = table.Column<string>(type: "TEXT", nullable: false, collation: "NOCASE"),
                 image_url = table.Column<string>(type: "TEXT", nullable: false, collation: "NOCASE"),
                 source_url = table.Column<string>(type: "TEXT", nullable: false, collation: "NOCASE"),
@@ -51,7 +52,8 @@ public partial class InitialMigration : Migration
             name: "users",
             columns: table => new
             {
-                id = table.Column<Guid>(type: "TEXT", nullable: false),
+                id = table.Column<ulong>(type: "INTEGER", nullable: false)
+                    .Annotation("Sqlite:Autoincrement", true),
                 email = table.Column<string>(type: "TEXT", nullable: false, collation: "NOCASE"),
                 password_hash = table.Column<string>(type: "TEXT", nullable: false, collation: "NOCASE"),
                 type = table.Column<int>(type: "INTEGER", nullable: false),
@@ -67,7 +69,7 @@ public partial class InitialMigration : Migration
             name: "removal_requests",
             columns: table => new
             {
-                art_id = table.Column<Guid>(type: "TEXT", nullable: false),
+                art_id = table.Column<ulong>(type: "INTEGER", nullable: false),
                 email = table.Column<string>(type: "TEXT", nullable: false, collation: "NOCASE"),
                 description = table.Column<string>(type: "TEXT", nullable: false, collation: "NOCASE"),
                 date_added = table.Column<DateTimeOffset>(type: "TEXT", nullable: false)
@@ -88,7 +90,7 @@ public partial class InitialMigration : Migration
             name: "tags",
             columns: table => new
             {
-                art_id = table.Column<Guid>(type: "TEXT", nullable: false),
+                art_id = table.Column<ulong>(type: "INTEGER", nullable: false),
                 tag = table.Column<string>(type: "TEXT", nullable: false, collation: "NOCASE"),
                 date_added = table.Column<DateTimeOffset>(type: "TEXT", nullable: false)
             },

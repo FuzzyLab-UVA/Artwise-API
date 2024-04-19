@@ -22,7 +22,7 @@ public sealed record ArtEntity : ArtwiseDbEntity
     /// <summary>
     /// The Id of the art.
     /// </summary>
-    public Guid Id { get; init; } = Guid.NewGuid();
+    public ulong Id { get; init; }
 
     /// <summary>
     /// The author of the art.
